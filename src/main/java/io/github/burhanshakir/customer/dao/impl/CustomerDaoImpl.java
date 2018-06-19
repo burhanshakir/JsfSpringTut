@@ -20,8 +20,7 @@ public class CustomerDaoImpl extends HibernateDaoSupport implements CustomerDao{
 
     public List<Customer> findAllCustomer()
     {
-//        getHibernateTemplate().find("from Customer")
+        return (List<Customer>) getHibernateTemplate().find("from Customer");
 
-        return null;
     }
 }
